@@ -15,9 +15,9 @@ export default {
     Data:Array
   },
   setup(props){
-    const retser = useRouter()
+    const router = useRouter()
     function Go(){
-      retser.push({name:'about',params:{shp:JSON.stringify(props.Data)}})
+      router.push({name:'about',params:{shp:JSON.stringify(props.Data)}})
     }
     return {
       Go
